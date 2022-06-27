@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    scroll-behavior: smooth;
+    
+}
+
+.nav{
+    &__li{
+        display: none;
+    }
+    &__logo{
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+    padding: 2rem;
+    transition: 1s;
+    }
+}
+
+.section1{
+    transition: 2s;
+    text-align: center;
+    position: relative;
+
+    &__h1{
+        font-size: 3.6em;
+        padding: .1em;
+        animation: titulo 1s;
+    }
+
+    @keyframes titulo {
+        from{
+            transform: scale(1.4);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+
+    &__p{
+    font-size: 1.1em;
+    animation: titulo 1s;
+    margin: 1.25rem;
+    text-align: justify;
+    }
+}
+
+.div{
+    display: grid;
+    grid-template-areas: "img img";
+    margin: 3em .2em 2em;
+    & img{
+        width: 100%;
+        height: 100%;
+        // border: .3em solid;
+        outline: .5em solid;
+    }
+}
+
+.section2{
+    text-align: center;
+
+    &__h1{
+        font-size: 3em;
+        margin: 3em auto 1em;
+    }
+
+    &__div{
+        &__h2{
+            font-size: 2em;
+        }
+    .transformaciones__grid{
+        display: grid;
+        grid-template-areas:
+        "img img";
+        margin: 2em .2em 7em;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // border: .3em solid;
+            outline: .5em solid;
+        }
+    }
+    }
+}
+
+.section3{
+    text-align: justify;
+    margin: -3em auto 2em auto;
+    padding: 0 1em;
+}
+
+.footer{
+    text-align: center;
+    &__div{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 4.5em;
+        a{
+            color: #000000;
+            font-size: 3em;
+        }
+    }
+    p{
+        font-size: 1.4em;
+        color: white;
+        background-color: rgba($color: #000000, $alpha: .9);
+    }
+}
+
+// DESKTOP
+
+// &__li{
+//     display: inline-flex;
+//     justify-content: space-between;
+//     padding: 1.2rem;
+// }
+
+//     &__a{
+//         text-decoration: none;
+//         font-size: 30px;
+//         padding: 5px 3px;
+//         transition: .3s;
+//         color: black;
+
+//     &:hover{
+//         color: #1190ca;
+//         transition: .3s;
+//         }
+
+//     }
